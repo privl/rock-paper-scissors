@@ -25,28 +25,36 @@ h1 {
     gap: 5vw;
 }
 
-.computer {
-    width: 400px;
+.computer,
+.player{
+    width: 450px;
+    height: 170px;
     background-color: #D5E8CE;
     border-radius: 10px;
+    padding: 20px;
+}
 
+.computer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .computer > .title {
     color: #111F0F;
 }
 
-.player {
-    width: 400px;
-    background-color: #D5E8CE;
-    border-radius: 10px;
+.computer-selection {
+    font-size: 100px;
+    user-select: none;
+}
 
+.player {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .player > .title {
@@ -57,6 +65,29 @@ h1 {
     font-size: 100px;
 
     display: flex;
-    gap: 20px;
+    gap: 5px;
 }
 
+.rock,
+.paper,
+.scissors{
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover{
+    background-color: #F7FBF1;
+    cursor: pointer;
+}
+
+.rock:focus,
+.paper:focus,
+.scissors:focus{
+    background-color: #F7FBF1;
+    border: 3px solid #111F0F;
+}
